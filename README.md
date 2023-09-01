@@ -9,7 +9,7 @@ This repository contains a collection of programming tasks for a C++ internship.
 
 **Description:**
 
-Create a program that generates a random number between a specified range (e.g., 1 to 100) and asks the user to guess it. Provide feedback on whether the guess is too high or too low until the user guesses the correct number. This task is designed to help you practice basic input/output and conditional statements in C++.
+Create a program that generates a random number between a specified range (e.g., 1 to 100) and asks the user to guess it. Provide feedback on whether the guess is too high or too low until the user guesses the correct number. This game showcases the use of `std::random_device` to generate a random number within a specified range.
 
 
 
