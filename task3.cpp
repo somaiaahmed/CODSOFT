@@ -21,10 +21,10 @@ void printBoard(){
     cout<<" "<<board[1][0]<<" | "<<board[1][1]<<" | "<<board[1][2]<<" ";
     cout<<"\n"<<"---"<<"|"<<"---"<<"|"<<"---"<<"\n";
     cout<<" "<<board[2][0]<<" | "<<board[2][1]<<" | "<<board[2][2]<<" ";
-  //  cout<<"\n"<<"---"<<"|"<<"---"<<"|"<<"---"<<"\n";
+    //  cout<<"\n"<<"---"<<"|"<<"---"<<"|"<<"---"<<"\n";
 }
 int checkFreeSpace(){
-int freeSpace=9;
+    int freeSpace=9;
     for(int i=0;i<3;i++){
         for(int j=0;j<3;j++){
             if(board[i][j]!=' ')
@@ -36,31 +36,31 @@ int freeSpace=9;
 }
 void player1Move(char c){
     int x,y;
-do{
-    cout<<"\n"<<"Player "<<c<<" Enter row #(1-3):";
+    do{
+        cout<<"\n"<<"Player "<<c<<" Enter row #(1-3):";
 
-    cin>>x;
-    x--;
-    cout<<"\n"<<"Player "<<c<<" Enter column #(1-3):";
-    cin>>y;
-    y--;
-    if(board[x][y]!=' ')
-        cout<<"\n"<<"Invalid move!\n";
-    else {
-        board[x][y] = c;
-        break;
+        cin>>x;
+        x--;
+        cout<<"\n"<<"Player "<<c<<" Enter column #(1-3):";
+        cin>>y;
+        y--;
+        if(board[x][y]!=' ')
+            cout<<"\n"<<"Invalid move!\n";
+        else {
+            board[x][y] = c;
+            break;
+        }
     }
-}
     while (board[x][y]!=' ');
 
 }
 void player2Move(char c){
     int x,y;
     do{
-        cout<<endl<<"Player "<<c<<" Enter row #(1-3):";
+        cout<<endl<<"Player "<<c<<" Enter row #(1-3):\n";
         cin>>x;
         x--;
-        cout<<endl<<"Player "<<c<<" Enter column #(1-3):";
+        cout<<endl<<"Player "<<c<<" Enter column #(1-3):\n";
         cin>>y;
         y--;
         if(board[x][y]!=' ')
@@ -76,9 +76,9 @@ char checkWinner(){
     //check rows
     for(int i=0;i<3;i++) {
         if (board[i][0] == board[i][1] && board[i][0] == board[i][2]) {
-        return board[i][0];
+            return board[i][0];
 
-     }
+        }
     }
     //check columns
     for(int i=0;i<3;i++) {
@@ -88,10 +88,10 @@ char checkWinner(){
         }
     }
     //check diagonals
-        if (board[0][0] == board[1][1] && board[0][0] == board[2][2]) {
-            return board[0][0];
+    if (board[0][0] == board[1][1] && board[0][0] == board[2][2]) {
+        return board[0][0];
 
-        }
+    }
     //check diagonals
     if (board[0][2] == board[1][1] && board[0][2] == board[2][0]) {
         return board[0][2];
@@ -118,22 +118,23 @@ void printWinner(char winner){
 
 int main() {
     char winner=' ';
-    char response=' ';
+    char response;
 
-       cout<<endl<<"Welcome to tic-tac-toe game!\n";
-
-       //do{
-
-           cout << endl<<"PLAYER ONE IS: ";
+    cout<<endl<<"Welcome to tic-tac-toe game!\n";
+    start:
+    {
+        char winner=' ';
+        char response;
+        cout << endl<<"PLAYER ONE IS: ";
         cin >> player1;
 
 
-  do { cout<<"\n"<<"PLAYER TWO IS: ";
-    cin>>player2;}
-  while(player1==player2);
-cout<<"\n";
+        do { cout<<"\n"<<"PLAYER TWO IS: ";
+            cin>>player2;}
+        while(player1==player2);
+        cout<<"\n";
 
-resetBoard();
+        resetBoard();
 
         while (winner == ' ' && checkFreeSpace() > 0) {
             printBoard();
@@ -148,13 +149,13 @@ resetBoard();
             winner = checkWinner();
         }
 
-    printBoard();
-    printWinner(winner);
+        printBoard();
+        printWinner(winner);
 
-   /* cout<<endl<<"Would you like to play again? (Y/N):";
+    }
+    cout<<endl<<"Would you like to play again? (Y/N):";
     cin>>response;
-}while(response=='Y');*/
-    cout<<endl<<"Thank you for playing!\n";
+    if(response=='Y')goto start;
+    else cout<<"Thank you for playing!\n";
     return 0;
 }
-
