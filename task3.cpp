@@ -156,6 +156,6 @@ int main() {
     cout<<endl<<"Would you like to play again? (Y/N):";
     cin>>response;
     if(response=='Y')goto start;
-    else cout<<"Thank you for playing!\n";
+    else cout<<endl<<"Thank you for playing!\n";
     return 0;
 }
