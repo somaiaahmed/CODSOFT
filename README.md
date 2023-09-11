@@ -5,7 +5,7 @@
 
 This repository contains a collection of programming tasks for a C++ internship. These tasks cover a range of topics and complexity levels, providing an opportunity to enhance your C++ programming skills. Below, you'll find details about each task and instructions on running and using the programs.
 
-## Number Guessing Game
+## Task 1: Number Guessing Game
 Welcome to the Number Guessing Game!
 This is a simple C++ console-based game where you have to guess a randomly generated number within a specified range. Test your intuition and try to guess the correct number in as few attempts as possible.
 
@@ -17,9 +17,11 @@ The game generates a random number within a specified range (e.g., 1 to 100) and
 
 ## Task 2: Simple Calculator
 
+Welcome to the Simple Calculator! This is a basic C++ console-based calculator that allows you to perform four fundamental arithmetic operations: addition, subtraction, multiplication, and division.
+
 **Description:**
 
-Develop a console-based calculator program that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. Allow the user to input two numbers and choose an operation to perform. This task will help you practice functions and user input handling in C++.
+The calculator performs basic arithmetic operations such as addition, subtraction, multiplication, and division. Allow the user to input two numbers and choose an operation to perform. This task will help you practice functions and user input handling in C++.
 
 
 ## Task 3: Tic-Tac-Toe Game
@@ -30,6 +32,7 @@ Build a console-based Tic-Tac-Toe game that allows two players to play against e
 
 
 ## Simple To-Do List Application
+
 This is a basic command-line to-do list application written in C++.
 It allows users to manage their tasks by adding, viewing, marking as complete, and removing tasks.
 
