@@ -26,9 +26,12 @@ The calculator performs basic arithmetic operations such as addition, subtractio
 
 ## Task 3: Tic-Tac-Toe Game
 
+Welcome to the Tic-Tac-Toe Game!
+This is a simple console-based implementation of the classic two-player game where you compete to get three of your markers in a row.
+
 **Description:**
 
-Build a console-based Tic-Tac-Toe game that allows two players to play against each other. Create a 3x3 grid as the game board and implement logic for displaying the current board, taking player input, updating the board, and checking for a win or a draw. This task involves working with arrays and conditional statements.
+ The Tic-Tac-Toe game allows two players to play against each other. Create a 3x3 grid as the game board and implement logic for displaying the current board, taking player input, updating the board, and checking for a win or a draw. This task involves working with arrays and conditional statements.
 
 
 ## Simple To-Do List Application
