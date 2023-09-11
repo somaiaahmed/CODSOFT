@@ -5,11 +5,13 @@
 
 This repository contains a collection of programming tasks for a C++ internship. These tasks cover a range of topics and complexity levels, providing an opportunity to enhance your C++ programming skills. Below, you'll find details about each task and instructions on running and using the programs.
 
-## Task 1: Number Guessing Game
+## Number Guessing Game
+Welcome to the Number Guessing Game!
+This is a simple C++ console-based game where you have to guess a randomly generated number within a specified range. Test your intuition and try to guess the correct number in as few attempts as possible.
 
 **Description:**
 
-Create a program that generates a random number between a specified range (e.g., 1 to 100) and asks the user to guess it. Provide feedback on whether the guess is too high or too low until the user guesses the correct number. This game showcases the use of `std::random_device` to generate a random number within a specified range.
+The game generates a random number within a specified range (e.g., 1 to 100) and asks the user to guess it. Provide feedback on whether the guess is too high or too low until the user guesses the correct number. This game showcases the use of `std::random_device` to generate a random number within a specified range.
 
 
 
