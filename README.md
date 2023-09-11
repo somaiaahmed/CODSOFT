@@ -27,11 +27,21 @@ Develop a console-based calculator program that performs basic arithmetic operat
 Build a console-based Tic-Tac-Toe game that allows two players to play against each other. Create a 3x3 grid as the game board and implement logic for displaying the current board, taking player input, updating the board, and checking for a win or a draw. This task involves working with arrays and conditional statements.
 
 
-## Task 4: To-Do List
+## Simple To-Do List Application
+This is a basic command-line to-do list application written in C++.
+It allows users to manage their tasks by adding, viewing, marking as complete, and removing tasks.
 
-**Description:**
+**Features:**
 
-Create a console-based to-do list manager that allows users to add, view, mark tasks as completed, and delete tasks. Implement these functionalities using functions and data structures. This task focuses on data management and interaction with user-generated data.
+Add Task: You can add tasks to your to-do list by providing a description.
+
+View Tasks: View your to-do list, including task descriptions and their completion status.
+
+Mark as Complete: Mark tasks as completed when you finish them.
+
+Remove Tasks: Remove tasks from the list.
+
+Quit: Exit the application when you're done managing your tasks.
 
 
 
